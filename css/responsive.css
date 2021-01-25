@@ -1,0 +1,205 @@
+@media all and (max-width : 1200px){
+    h5 {
+        font-family: Raleway;
+        font-size: 18px;
+    }
+}
+@media all and (max-width : 991px){
+    .banar .menu ul a {
+        padding: 5px 10px;
+        font-size: 20px;
+    }
+    .banar .logo h2 {
+        font-size: 60px;
+    }
+    .plate .item {
+        height: 180px;
+    }
+    .plate .item p {
+        font-size: 11px;
+    }
+    .plate .item span {
+        font-size: 12px;
+    }
+    .flaver h4 {
+        margin: 0px 0 30px;
+    }
+    .data {
+        width: 100%;
+    }
+    .book select {
+        width: 225px;
+    }
+}
+
+@media all and (max-width : 767px){
+    h2{
+        font-size: 70px;
+    }
+    h3 {
+        font-size: 28px;
+        line-height: 5px;
+    }
+    header {
+        padding: 20px 0;
+    }
+    .row{
+        display: inline;
+    }
+    .banar .logo{
+        width: 100%;
+        text-align: center;
+    }
+
+    .banar .menu {
+        width: 100%;
+        display: block;
+    }
+
+    .banar .menu ul {
+        list-style: none;
+        display: none;
+        background: #fff;
+        width: 200px;
+        position: absolute;
+    }
+    .banar .menu ul a:hover{
+    color: #777;
+    }
+    .read-more {
+        width: 90%;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .read-more h1 {
+        font-size: 28px;
+        line-height: 0px;
+        margin-bottom: 35px;
+    }
+
+    .read-more a {
+        font-size: 18px;
+        padding: 5px 20px;
+        margin-top: 50px;
+        width: 200px;
+    }
+    .flaver {
+        padding: 20px 0;
+    }
+    .flaver h4 {
+        margin:0  0 30px;
+        text-align: center;
+    }
+    .update-item {
+        padding: 10px 0;;
+    }
+    .update-item .item h5 {
+        line-height: 25px;
+    }
+    .update-item .item p {
+        width: 92%;
+        margin: 0 auto 20px;
+    }
+    .update-item {
+        text-align: center;
+    }
+    .plate .item p {
+        width: 98%;
+        font-size: 14px;
+    }
+    .flaver p {
+        font-size: 14px;
+        text-align: center;
+        margin: 0 auto 10px;
+    }
+    .plate .item::before {
+        font-size: 14px;
+    }
+    .plate .item {
+        width: 49%;
+        height: 264px;
+    }
+    .discover .item-group {
+        padding: 0;
+    }
+    .discover .item-group .img {
+        margin: auto;
+    }
+    .discover .item-group .item {
+        margin: 0;
+        text-align: center;
+    }
+    .discover .item-group .item p {
+        width: 100%;
+    }
+    .book {
+        text-align: center;
+    }
+    .book .data {
+        margin: 0;
+    }
+    footer .top p {
+        width: 90%;
+        font-size: 14px;
+    }
+    footer .bottom p {
+        width: 100%;
+    }
+    .bars{
+        display: table;
+        float: left;
+    }
+    footer .bottom h4 {
+        margin: 50px 0 20px;
+    }
+    footer .bottom {
+        padding: 0;
+    }
+    .banar .menu ul a {
+        color: rgb(83, 38, 247);
+    }
+}
+@media all and (max-width : 500px){
+    .plate .item {
+        height: 230px;
+    }
+    .easy p {
+        width: 100%;
+    }
+    footer .top ul {
+        padding: 0;
+    }
+    footer .top ul a {
+        width: 30px;
+        height: 30px;
+        margin: 2px;
+    }
+    footer .top ul i {
+        font-size: 15px;
+        padding: 5px;
+    }
+}
+@media all and (max-width : 400px){
+    .plate .item {
+        height: 180px;
+    }
+    .plate .item p {
+        font-size: 11px;
+    }
+    .plate .item  h6{
+        margin: 0;
+        font-size: 16px;
+    }
+    .plate .item img {
+        width: 100%;
+        height: 90%;
+    }
+    .easy ul {
+        padding: 0;
+    }
+    .easy ul a {
+        padding: 5px 9px;
+        font-size: 14px;
+    }
+}
