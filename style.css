@@ -1,3 +1,4 @@
+
 /* --------------------------------------------
     Template Name: Cuda
     Tempate URL: http://github.com/kajolroy
@@ -136,8 +137,12 @@ header{
 
 .banar .menu ul{
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
 }
 
 .banar .menu ul a{
@@ -183,31 +188,34 @@ header{
 }
 
 .read-more a{
-    color: #000;
-	background-color: #fff;
-	border: none;
-	padding: 13px 62px;
-	margin: 30px auto;
-	font-weight: 700;
+    display: block;
+    width: 300px;
+    margin: auto;
+    padding: 10px 30px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    color: rgb(53, 53, 53);
     font-family: Raleway-reguler;
-    font-weight: bold;
-    text-decoration: none;
     font-size: 30px;
-	position:relative;
-	z-index:1;
-    border-radius: 5px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
 }
 
 .read-more a::before{
-    content: ""; 
-    width: 0;
+    content: "";
+    display: block;
+    width: 0%;
     height: 100%;
-    background-color: rgba(113, 255, 242, 0.6);
+    background-color: tomato;
     position: absolute;
     top: 0;
     left: 0;
-    transition: .4s;
+    border-radius: 10px;
     z-index: -1;
+    transition: .4s;
 }
 .read-more a:hover::before{
     width: 100%;
@@ -295,11 +303,21 @@ header{
     left: 0;
     bottom: -50;
     visibility: hidden;
-    transform: scaleY(0);
-    transform-origin: bottom;
+    -webkit-transform: scaleY(0);
+        -ms-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: bottom;
+        -ms-transform-origin: bottom;
+            transform-origin: bottom;
     color: white;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-size: 20px;
 }
@@ -307,7 +325,11 @@ header{
 .plate .item:hover::before{
     bottom: 10px;
     visibility: visible;
-    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+        -ms-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transition: .4s;
+    -o-transition: .4s;
     transition: .4s;
 }
 
@@ -318,6 +340,8 @@ header{
     bottom: -50px;
     color: white;
     margin-bottom: 20px;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
     transition: .4s;
 }
 
@@ -367,8 +391,12 @@ header{
 
 .easy ul{
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 20px;
 }
 
@@ -380,6 +408,8 @@ header{
     text-transform: capitalize;
     font-weight: bold;
     border-radius: 5px;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
     transition: .2s;
 }
 
@@ -438,7 +468,9 @@ header{
 }
 .discover .item-group .img img{
     margin-top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
 }
 
 .discover .item-group  .content span{
@@ -549,14 +581,24 @@ header{
     text-align: center;
     font-size: 18px;
     font-family: Raleway;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: white;
-    transform-origin: top;
+    -webkit-transform-origin: top;
+        -ms-transform-origin: top;
+            transform-origin: top;
 }
 
 .new-menu .item .content:hover::before{
+    -webkit-transition: .4s;
+    -o-transition: .4s;
     transition: .4s;
     top: 0;
 }
@@ -589,7 +631,9 @@ footer .top p{
 
 footer .top ul{
     list-style: none;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 footer .top ul li{
@@ -603,6 +647,8 @@ footer .top ul a{
     display: block;
     border-radius: 50%;
     background-color: rgb(255, 255, 255);
+    -webkit-transition: 1s ease;
+    -o-transition: 1s ease;
     transition: 1s ease;
 }
 
@@ -610,15 +656,21 @@ footer .top ul i{
     font-size: 15px;
     padding: 10px;
     color: #4b4b4b;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
     transition: .4s;
 }
 
 footer .top ul a:hover {
+    background:-webkit-gradient(linear, left top, left bottom, from(rgb(173, 182, 0)), to(rgb(0, 126, 17)));
+    background:-o-linear-gradient(rgb(173, 182, 0), rgb(0, 126, 17));
     background:linear-gradient(rgb(173, 182, 0), rgb(0, 126, 17));
 }
 footer .top ul a:hover i{
     color: white;
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
 }
 
 
