@@ -1,0 +1,708 @@
+
+/* --------------------------------------------
+    Template Name: Cuda
+    Tempate URL: http://github.com/kajolroy
+    Discription: Creative / Prortfolio one page Template
+    Author: Kajol Roy
+    Author URL: http://github.com/ikajolroy
+    Lincense: GNU Genarel Public lincense version 3.0
+    License URL: http://github.com/ikajolroy
+    Version: 1.0
+
+    All files, unless otherwise stated, are relesed under the GNU Genarel Public License 
+    Version: 3.0 (http://github.com/ikajolroy/cuda.html
+
+-------------------------------------------------
+
+1. Typography 
+2. Header-area
+    2.0 nav
+    2.1 Banar
+    2.2 Heading
+3. Flaver section
+4. Update item sectin
+5. Plate section
+6. Easy section
+7. Discover section
+    7.1 New-menu
+8. Book section
+9. New-menu section
+10.Footer section  
+
+------------------------------------------------- */
+
+
+
+
+
+/* --------------------------- 1. Typography --------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: Raleway;
+    src: url(fonts/Raleway-SemiBold.woff);
+}
+@font-face{
+    font-family: Raleway-reguler;
+    src: url(fonts/Raleway-Medium.woff);
+}
+@font-face{
+    font-family: Cookie-Regular;
+    src: url(fonts/Cookie-Regular.woff);
+}
+
+h2{
+    font-size: 100px;
+    font-family:Cookie-Regular;
+}
+
+h3{
+    font-size: 50px;
+    color: #ad6c12;
+    font-family: Raleway-reguler;
+    text-transform: uppercase;
+    font-weight:bold ;
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+
+h4{
+    font-family:Raleway-reguler;
+}
+
+h5{
+    font-family: Raleway;
+}
+
+h6{
+    font-size: 20px;
+    font-weight: bold;
+    color: #304751;
+    font-family: Raleway-reguler;
+}
+
+p{
+    font-family:Raleway-reguler;
+}
+
+.dot{
+    width: 20px;
+    height: 20px;
+    background-color: #2a3b40;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+
+.background{
+    overflow: hidden;
+}
+
+
+
+/* --------------------------- 2. Header-area--------------------*/
+.banar{
+    background-image: url(images/banar.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+header{
+    padding: 50px 0;
+}
+
+.banar .logo a{
+    text-transform: uppercase;
+    font-size: 31px;
+    font-family:Raleway ;
+    padding: 10px 0;
+    color: #dcddde;
+    text-decoration: none;
+}
+  
+.bars{
+    /*! text-align: right; */
+    color: white;
+    font-size: 20px;
+    display: none;
+    position: relative;
+}
+
+/* *********** Nav section style *********** */
+
+.banar .menu ul{
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+}
+
+.banar .menu ul a{
+    padding: 10px 20px;
+    display: block;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: Raleway;
+    color: #dcddde;
+    text-decoration: none;
+    font-weight: 1000;
+}
+.banar .menu ul a:hover{
+    color: #fff;
+}
+
+.banar .logo h2{
+    line-height: 12px;
+}
+
+
+/* ********* Read more section style ********* */
+
+.read-more{
+    width: 650px;
+    height: 400px;
+    background-color: #ffffffb3;
+    margin: 0 auto 200px;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+
+.read-more h1{
+    font-size: 65px;
+    color: #ad6c12;
+    font-family: Raleway-reguler;
+    text-transform: uppercase;
+    font-weight:bold ;
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+
+.read-more a{
+    display: block;
+    width: 300px;
+    margin: auto;
+    padding: 10px 30px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    color: rgb(53, 53, 53);
+    font-family: Raleway-reguler;
+    font-size: 30px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}
+
+.read-more a::before{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 100%;
+    background-color: tomato;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    z-index: -1;
+    transition: .4s;
+}
+.read-more a:hover::before{
+    width: 100%;
+}
+
+
+
+
+
+/* ----------------------3. Flaver section -------------------- */
+
+.flaver{
+    background-color: #2a3b40;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.flaver img{
+    width: 98%;
+}
+
+.flaver h4{
+    font-size: 30px;
+    margin: 100px 0 30px;
+}
+
+.flaver p{
+    width: 90%;
+    font-size: 17px;
+}
+
+
+
+
+/* -----------------------4. Update item sectin ----------------------- */
+
+.update-item {
+    padding: 80px 0;
+    color: #2a3b40;
+    background-color: #d4d8d9;
+}
+
+.update-item .item h5{
+    line-height: 50px;
+}
+
+.update-item .item p{
+    width: 92%;
+}
+
+
+
+
+
+
+/* ------------------------------5. Plate section ---------------------------- */
+
+.plate {
+    padding: 100px 0;
+    background-image: url(images/background.jpg);
+    text-align: center;
+}
+
+.plate .item-group{
+    background-color: rgba(255, 255, 255, 0.781);
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+.plate .item{
+    display: inline-block;
+    width: 24%;
+    height: 282px;
+    position: relative;
+    overflow: hidden;
+}
+
+.plate .item::before{
+    content: "Buy Now";
+    width: 100%;
+    height: 30%;
+    background-color: rgba(188, 4, 255, 0.67);
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -50;
+    visibility: hidden;
+    -webkit-transform: scaleY(0);
+        -ms-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: bottom;
+        -ms-transform-origin: bottom;
+            transform-origin: bottom;
+    color: white;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 20px;
+}
+
+.plate .item:hover::before{
+    bottom: 10px;
+    visibility: visible;
+    -webkit-transform: scaleY(1);
+        -ms-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+
+.plate .item h5{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -50px;
+    color: white;
+    margin-bottom: 20px;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+
+.plate .item:hover h5{
+    bottom: 20px;
+}
+
+.plate .item img{
+    width: 100%;
+}
+
+.plate .item p{
+    width: 80%;
+    margin: auto;
+    color: #304751;
+    font-size: 14px;
+}
+
+.plate .item span{
+    font-family:Raleway ;
+}
+
+
+
+
+/* ------------------------------6. Easy section ---------------------------- */
+
+.easy{
+    background-image: url(images/easy-bag.png);
+    padding: 80px  0;
+    background-repeat: no-repeat;
+    background-color: #d4d8d9;
+    text-align: center;
+    color: #2a3b40;
+}
+
+
+.easy h4{
+    font-weight: bold;
+}
+
+.easy p{
+    width: 65%;
+    font-size: 18px;
+    margin: 30px auto;
+}
+
+.easy ul{
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 20px;
+}
+
+.easy ul a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #2a3b40;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: bold;
+    border-radius: 5px;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+}
+
+.easy ul a:hover{
+    background-color: rgba(0, 0, 0, 0.193);
+    color: white;
+}
+
+
+
+
+/* -----------------------------7. Discover section ------------------------------ */
+
+.discover{
+    background-image: url(images/background-2.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position:  center; 
+   padding: 200px 0  0;
+}
+
+
+
+/* *************    7.1 New-menu  ************** */
+
+.discover .item-group{
+    padding: 50px 0;
+    background-color: #ffffffc4;
+}
+ 
+.discover .item-group  h2, .discover .item-group h3{
+    text-align: center;
+    margin: 0;
+}
+
+.discover .item-group .item{
+    margin: 50px 0;
+    color: #304751;
+}
+
+.discover .item-group .item h6{
+    text-transform: uppercase;
+}
+
+.discover .item-group .item p{
+    width: 80%;
+    font-size: 18px;
+}
+
+.discover .item-group .img{
+    width: 80px ;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+}
+.discover .item-group .img img{
+    margin-top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+
+.discover .item-group  .content span{
+    font-family: Raleway;
+    font-weight: bold;
+}
+
+
+
+/* ---------------------8. Book section ------------------- */
+
+.book{
+    background-color: #2a3b40;
+    color: white;
+    padding: 50px 0;
+}
+.data {
+    margin: auto;
+    width: 70%;
+}
+.book h2{
+    text-align: center;
+    font-size: 70px;
+}
+
+.book select{
+    width: 250px;
+    color: #fff;
+    font-family:  Raleway;
+    padding: 5px 50px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: #2a3b40;
+    margin-bottom: 40px;
+}
+
+.book input{
+    border: 2px solid white;
+    padding: 5px 20px;
+    font-family: Raleway;
+    font-size: 18px;
+    width: 250px;
+    color: white;
+    background-color: #2a3b40;
+    margin: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+
+
+
+/* ------------------------9. New-menu section --------------------------- */
+
+.new-menu {
+    background-color: #d4d8d9;
+    padding: 50px 0 100px;
+}
+
+.new-menu h2, .new-menu h3{
+    text-align: center;
+}
+
+.new-menu .item .content{
+    margin: auto;
+    width: 95%;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.new-menu .item .content img{
+    width: 100%;
+}
+
+.new-menu .item p{
+    width: 98%;
+    color: #304751;
+}
+
+.new-menu .item .content .text{
+    padding: 15px;
+}
+
+.new-menu .item .content span {
+    color: #304751;
+    font-family: Raleway-reguler;
+    display: block;
+    margin: 5px 0 10px;
+}
+
+.new-menu .item .content a {
+    color: #304751;
+    font-family: Raleway-reguler;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 5px solid orange;
+}
+
+.new-menu .item .content::before{
+    content: " Add to Cart   🛒";
+    width: 100%;
+    height: 20%;
+    background-color: rgba(255, 0, 239, 0.78);
+    position: absolute;
+    top: -50%;
+    text-align: center;
+    font-size: 18px;
+    font-family: Raleway;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+    -webkit-transform-origin: top;
+        -ms-transform-origin: top;
+            transform-origin: top;
+}
+
+.new-menu .item .content:hover::before{
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+    top: 0;
+}
+
+/* -------------------------  10.Footer section  ----------------------- */
+
+footer .top{
+    text-align: center;
+    background-color: #2a3b40;
+    color: #fff;
+    overflow: hidden;
+}
+ 
+footer .top span{
+    font-size: 100px;
+    font-family: Raleway;
+}
+
+footer .top h6{
+    color: #fff;
+    margin: 30px 0;
+}
+
+footer .top p{
+    width: 50%;
+    font-size: 18px;
+    margin: auto;
+    line-height: 20px;
+}
+
+footer .top ul{
+    list-style: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+footer .top ul li{
+    display: inline-block;
+}
+
+footer .top ul a{
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    display: block;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    -webkit-transition: 1s ease;
+    -o-transition: 1s ease;
+    transition: 1s ease;
+}
+
+footer .top ul i{
+    font-size: 15px;
+    padding: 10px;
+    color: #4b4b4b;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+
+footer .top ul a:hover {
+    background:-webkit-gradient(linear, left top, left bottom, from(rgb(173, 182, 0)), to(rgb(0, 126, 17)));
+    background:-o-linear-gradient(rgb(173, 182, 0), rgb(0, 126, 17));
+    background:linear-gradient(rgb(173, 182, 0), rgb(0, 126, 17));
+}
+footer .top ul a:hover i{
+    color: white;
+    -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
+}
+
+
+footer .bottom{
+    padding: 50px 0;
+    background-color: #d4d8d9;
+    text-align: center;
+}
+
+footer .bottom h4{
+    font-size: 30px;
+    font-family: Raleway;
+    color: #2d2f2a;
+    margin: 0 0 40px;
+}
+
+footer .bottom  h6{
+    color: #2d2f2a;
+    font-size: 18px;
+}
+
+footer .bottom p{
+    width: 60%;
+    font-size: 18px;
+    color: #2d2f2a;
+}
+footer > span{
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    color: white;
+    background-color: #2a3b40;
+}
+
+/* <!-- ---------Footer section ends from here--------- --> */
