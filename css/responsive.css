@@ -30,6 +30,9 @@
     .book select {
         width: 225px;
     }
+    footer .bottom h4 {
+        font-size: 27px;
+    }
 }
 
 @media all and (max-width : 767px){
@@ -158,6 +161,9 @@
     }
     .banar .menu ul a {
         color: rgb(83, 38, 247);
+    }
+    footer .bottom {
+        text-align: center;
     }
 }
 @media all and (max-width : 500px){
